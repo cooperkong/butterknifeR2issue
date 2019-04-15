@@ -10,7 +10,7 @@ import butterknife.OnClick
 class Activity2: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.lib1_layout)
+        setContentView(R.layout.lib2_layout)
         ButterKnife.bind(this)
     }
 //    @BindView(R2.id.textview2)
