@@ -3,6 +3,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileOptions {
@@ -32,6 +34,9 @@ dependencies {
 
     implementation project(":lib1")
     implementation project(":lib2")
+    //Butterknife
+    implementation "com.jakewharton:butterknife:10.1.0"
+    kapt "com.jakewharton:butterknife-compiler:10.1.0"
 
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
 }
